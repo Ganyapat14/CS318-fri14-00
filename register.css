@@ -1,0 +1,101 @@
+/* ตั้งค่าพื้นฐานสำหรับหน้าเว็บ */
+body {
+    margin: 0; /* ลบระยะขอบทั้งหมด */
+    padding: 0; /* ลบพื้นที่ภายใน */
+    font-family: 'Roboto', sans-serif; /* ตั้งฟอนต์เริ่มต้น */
+    background: url('homepage.jpg') no-repeat center center fixed; /* ใช้ภาพพื้นหลังและตั้งให้อยู่ตรงกลาง */
+    background-size: cover; /* ปรับภาพพื้นหลังให้เต็มพื้นที่ */
+    color: white; /* ตั้งสีข้อความเริ่มต้น */
+}
+
+/* คอนเทนเนอร์หลัก */
+.create-account-container {
+    display: flex; /* ใช้ Flexbox จัดให้อยู่ตรงกลาง */
+    justify-content: center; /* จัดตำแหน่งแนวนอนตรงกลาง */
+    align-items: center; /* จัดตำแหน่งแนวตั้งตรงกลาง */
+    height: 100vh; /* ความสูงเต็มหน้าจอ */
+    background: rgba(0, 0, 0, 0.7); /* พื้นหลังโปร่งใสสีดำ */
+}
+
+/* กล่องฟอร์ม */
+.create-account-box {
+    background: rgba(255, 255, 255, 0.15); /* พื้นหลังโปร่งใสสีขาว */
+    border-radius: 50px; /* มุมกล่องโค้งมน */
+    padding: 40px 30px; /* เพิ่มระยะห่างภายใน */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้กล่อง */
+    max-width: 600px; /* จำกัดความกว้างสูงสุดที่ 600px */
+    width: 90%; /* ตั้งความกว้างให้เต็มพื้นที่ 90% ของหน้าจอ */
+}
+
+/* หัวข้อ */
+h1 {
+    font-size: 2.5rem; /* ขนาดตัวอักษรหัวข้อหลัก */
+    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างจากหัวข้อ */
+    color: #ff3503; /* สีแดงสด */
+    font-weight: bold; /* ตัวหนา */
+}
+
+/* ข้อความรองใต้หัวข้อ */
+h2 {
+    font-size: 1.2rem; /* ขนาดตัวอักษรเล็กกว่าหัวข้อหลัก */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+    font-weight: normal; /* ตัวอักษรบาง */
+}
+
+/* กลุ่มของช่องกรอกที่จัดให้อยู่ในแถวเดียวกัน */
+.textbox-group {
+    display: flex; /* ใช้ Flexbox เพื่อจัดช่องกรอกอยู่ในแถวเดียวกัน */
+    gap: 20px; /* เพิ่มระยะห่างระหว่างช่องกรอก */
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างกลุ่มช่องกรอกกับส่วนถัดไป */
+}
+
+/* ช่องกรอกเดี่ยว */
+.textbox {
+    width: 100%; /* ให้ช่องกรอกเต็มความกว้างของกล่องฟอร์ม */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+/* รูปแบบช่องกรอก */
+.textbox input {
+    width: 100%; /* ให้ช่องกรอกเต็มความกว้าง */
+    padding: 15px; /* เพิ่มระยะห่างภายในช่องกรอก */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 35px; /* มุมโค้งมน */
+    font-size: 1rem; /* ขนาดตัวอักษร */
+    background: rgba(255, 255, 255, 0.8); /* สีพื้นหลังโปร่งใสสีขาว */
+    box-sizing: border-box; /* ป้องกันไม่ให้ช่องกรอกเกินขอบกล่อง */
+}
+
+/* ปุ่มกด */
+input[type="submit"] {
+    width: 100%; /* ปรับให้ปุ่มเต็มความกว้าง */
+    padding: 15px; /* เพิ่มระยะห่างภายใน */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 50px; /* มุมโค้งมน */
+    background: #d00617; /* สีแดงเข้ม */
+    color: white; /* สีข้อความในปุ่ม */
+    font-size: 1.2rem; /* ขนาดตัวอักษรในปุ่ม */
+    font-weight: bold; /* ตัวหนา */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    transition: all 0.3s ease; /* เพิ่มการเคลื่อนไหวให้ปุ่ม */
+}
+
+input[type="submit"]:hover {
+    background: #ff3503; /* เปลี่ยนสีปุ่มเมื่อชี้เมาส์ */
+}
+
+/* ลิงก์เพิ่มเติม */
+.extra-links {
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.extra-links a {
+    color: #f5f5f5; /* สีแดงสด */
+    text-decoration: none; /* ลบเส้นใต้ลิงก์ */
+}
+
+.extra-links a:hover {
+    color: #ff3503;
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อชี้เมาส์ */
+}

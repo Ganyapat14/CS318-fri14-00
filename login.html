@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yippe Cinema - Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- ลิงก์เชื่อมต่อไปยังไฟล์ CSS -->
+</head>
+<body>
+    <div class="login-container"> <!-- คอนเทนเนอร์หลักของหน้าล็อกอิน -->
+        <div class="login-box"> <!-- กล่องสำหรับเนื้อหาล็อกอิน -->
+            <h1>Yippe Cinema</h1> <!-- ชื่อเว็บไซต์ -->
+            <h2>Welcome! Login to book your movie tickets.</h2> <!-- ข้อความต้อนรับ -->
+            <form action="#" method="post"> <!-- ฟอร์มล็อกอิน -->
+                <div class="textbox"> <!-- ส่วนของการกรอก Username -->
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox"> <!-- ส่วนของการกรอก Password -->
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                
+                <div class="remember-me"> <!-- ส่วน Remember me และ Forgot Password -->
+                    <div>
+                        <input type="checkbox" id="remember" name="remember"> <!-- กล่องติ๊ก Remember me -->
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a> <!-- ลิงก์สำหรับ Forgot Password -->
+                </div>
+
+                <input type="submit" value="Login"> <!-- ปุ่มเข้าสู่ระบบ -->
+
+                <div class="extra-links"> <!-- ลิงก์สำหรับสร้างบัญชีใหม่ -->
+                    <a href="register.html">Don't have accounr? | Create Account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ข้อมูลพื้นฐานของหน้า -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yippe Cinema - Create Account</title>
+    <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <link rel="stylesheet" href="register.css">
+    <!-- ใช้ฟอนต์จาก Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- ส่วนของคอนเทนเนอร์หลักที่ครอบฟอร์มทั้งหมด -->
+    <div class="create-account-container">
+        <!-- กล่องฟอร์มสมัครบัญชี -->
+        <div class="create-account-box">
+            <!-- ชื่อเว็บไซต์ -->
+            <h1>Yippe Cinema</h1>
+            <!-- หัวข้อย่อย -->
+            <h2>Create Your Account</h2>
+            <!-- ฟอร์มกรอกข้อมูล -->
+            <form action="#" method="post">
+                <!-- กลุ่มช่องกรอกชื่อและนามสกุล (อยู่ในแถวเดียวกัน) -->
+                <div class="textbox-group">
+                    <div class="textbox">
+                        <input type="text" placeholder="First Name" name="first_name" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Last Name" name="last_name" required>
+                    </div>
+                </div>
+                <!-- ช่องกรอกวันเดือนปีเกิด -->
+                <div class="textbox">
+                    <input type="date" name="dob" required>
+                </div>
+                <!-- ช่องกรอกอีเมล (เลือกกรอกหรือไม่ก็ได้) -->
+                <div class="textbox">
+                    <input type="email" placeholder="Email (optional)" name="email">
+                </div>
+                <!-- ช่องกรอกชื่อผู้ใช้ -->
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <!-- กลุ่มช่องกรอกรหัสผ่านและยืนยันรหัสผ่าน (อยู่ในแถวเดียวกัน) -->
+                <div class="textbox-group">
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                    </div>
+                </div>
+                <!-- ช่องกรอกหมายเลขโทรศัพท์ -->
+                <div class="textbox">
+                    <input type="tel" placeholder="Phone Number" name="phone" required>
+                </div>
+                <!-- ปุ่มกดสมัคร -->
+                <input type="submit" value="Create Account">
+                <!-- ลิงก์กลับไปยังหน้า Login -->
+                <div class="extra-links">
+                    <a href="login.html">Already have an account? Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* ตั้งค่าพื้นฐานสำหรับหน้า */
+body {
+    margin: 0; /* ลบระยะขอบเริ่มต้นของเบราว์เซอร์ */
+    padding: 0; /* ลบระยะ Padding เริ่มต้นของเบราว์เซอร์ */
+    font-family: 'Roboto', sans-serif; /* กำหนดฟอนต์ให้เป็น Roboto */
+    background: url('homepage.jpg') no-repeat center center fixed; /* ตั้งภาพพื้นหลัง */
+    background-size: cover; /* ทำให้พื้นหลังเต็มหน้าจอ */
+    color: #ffffff; /* กำหนดสีข้อความเป็นสีขาว */
+    display: flex; /* ใช้ Flexbox จัดตำแหน่ง */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    height: 100vh; /* กำหนดความสูงของหน้าเต็มหน้าจอ */
+}
+
+/* สไตล์ของคอนเทนเนอร์ล็อกอิน */
+.login-container {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    background: rgba(79, 76, 76, 0.8); /* พื้นหลังสีดำโปร่งแสง */
+    border-radius: 35px; /* มุมโค้งของคอนเทนเนอร์ */
+    padding: 50px; /* ระยะห่างภายใน */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* เพิ่มเงา */
+}
+
+/* กล่องเนื้อหาล็อกอิน */
+.login-box {
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    max-width: 600px; /* กำหนดความกว้างสูงสุด */
+    width: 90%; /* ให้ขยายเต็มพื้นที่ */
+}
+
+/* สไตล์ของหัวข้อใหญ่ */
+h1 {
+    font-size: 2.5rem; /* ขนาดฟอนต์ใหญ่ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    color: #ff4500; /* สีส้มเด่น */
+}
+
+/* สไตล์ข้อความต้อนรับ */
+h2 {
+    font-size: 1.5rem; /* ขนาดฟอนต์รอง */
+    margin-bottom: 30px; /* ระยะห่างด้านล่าง */
+    color: #d7d6d7; /* สีเทา */
+}
+
+/* ช่องกรอกข้อมูล */
+form .textbox {
+    margin-bottom: 15px; /* ระยะห่างระหว่างช่องกรอก */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* ให้ขยายเต็มพื้นที่ */
+    padding: 10px; /* ระยะห่างภายในช่อง */
+    font-size: 1rem; /* ขนาดฟอนต์ */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 25px; /* มุมโค้ง */
+    margin-top: 5px; /* ระยะห่างด้านบน */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none; /* ลบขอบสีเริ่มต้น */
+    box-shadow: 0 0 8px #ff4400a0; /* เพิ่มแสงสีส้มเมื่อโฟกัส */
+}
+
+/* สไตล์ Remember me และลิงก์ Forgot Password */
+.remember-me {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: space-between; /* จัดช่องว่างระหว่าง Remember และ Forgot Password */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    margin: 15px 0; /* ระยะห่างบน-ล่าง */
+    font-size: 0.9rem; /* ขนาดฟอนต์เล็ก */
+}
+
+.remember-me a {
+    color: #d8d8d8; /* สีของลิงก์ */
+    transition: color 0.3s ease; /* เพิ่มการเปลี่ยนสีแบบนุ่ม */
+}
+
+.remember-me a:hover {
+    color: #ff6347; /* เปลี่ยนเป็นสีขาวเมื่อ Hover */
+}
+
+/* ปุ่มล็อกอิน */
+input[type="submit"] {
+    width: 50%; /* ปุ่มเต็มความกว้าง */
+    padding: 10px; /* ระยะห่างภายใน */
+    font-size: 1.2rem; /* ขนาดฟอนต์ */
+    background-color: #ff4500; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 35px; /* มุมโค้ง */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือ */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบนุ่ม */
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6347; /* สีพื้นหลังเปลี่ยนเมื่อ Hover */
+    transform: scale(1.05); /* ขยายเล็กน้อย */
+}
+
+/* ลิงก์ Create Account */
+.extra-links {
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+}
+
+.extra-links a {
+    color: #d8d8d8; /* สีของลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้ */
+    font-size: 1rem; /* ขนาดฟอนต์ */
+    transition: color 0.3s ease; /* เพิ่มการเปลี่ยนสี */
+}
+
+/* เปลี่ยนสีลิงก์เมื่อ hover */
+.extra-links a:hover {
+    color: #ff4500; /* เปลี่ยนเป็นสีส้มเมื่อ hover */
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อ hover */
+}
+
+/* เปลี่ยนลักษณะของลิงก์เมื่อคลิก */
+.extra-links a:active {
+    color: #ff6347; /* สีเปลี่ยนเมื่อคลิก */
+    transform: scale(1.05); /* ขยายขนาดลิงก์เล็กน้อยเมื่อคลิก */
+}
